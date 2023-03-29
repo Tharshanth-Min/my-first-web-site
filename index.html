@@ -1,0 +1,100 @@
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <p id="demo">first</p><br>
+
+        <button onclick="myfunction()">click</button>
+        <button onclick="document.getElementById('time').innerHTML=Date()">time is</button>
+        <button onclick="this.innerHTML=Date()">time is a</button>
+        <button onclick="timeFunction()">the time</button>
+        <p onmouseover="this.style.backgroundColor='red'">hello</p>
+        <p onmouseout="this.style.backgroundColor='blue'">myDIV.</p>
+        <button onclick="changeText()">click to change</button>
+
+     
+  
+
+            <h1 id="demon"></h1>
+            <p id="demmo"></p>
+            <p id="time"></p>
+            <p id="timee"></p>
+            <p id="slice"></p>
+            <p id="substract"></p>
+            <p id="change">please visit Microsoft</p>
+            <p id="replaceAll"></p>
+            <p id="concat"></p>
+            
+          
+          <script>
+           
+           function timeFunction(){
+            document.getElementById("timee").innerHTML=Date();
+           }
+
+        try {
+            carName = "Saab";
+            let carName = "Volvo";
+          }
+          catch(err) {
+            document.getElementById("demon").innerHTML = err;
+          }
+
+
+ function myfunction(){
+  document.getElementById("demo").innerHTML='name';}
+
+
+
+            const cars = ["Saab", "Volvo", "BMW"];
+             // Change an element:
+            cars[0] = "Toyota";
+
+            // Add an element:
+            cars.push("Audi");
+
+           // Display the Array:
+            document.getElementById("demmo").innerHTML = cars; 
+
+          //display big numbers
+          let x = BigInt("123456789012345678901234567890");
+
+
+          let text = "Apple, Banana, Kiwi";
+let part = text.slice(7,13);
+document.getElementById("slice").innerHTML = part; 
+
+let subtr="kishan,kish";
+document.getElementById('substract').innerHTML=subtr.substr(7,2);
+
+function changeText() {
+  let textt = document.getElementById("change").innerHTML; 
+  document.getElementById("change").innerHTML =
+  textt.replace("Microsoft","W3Schools");
+  textt.toUpperCase();
+}
+
+
+let texxt = "I love cats. Cats are very easy to love. Cats are very popular."
+texxt = texxt.replaceAll("Cats","Dogs");
+texxt = texxt.replaceAll("cats","dogs");
+
+document.getElementById("replaceAll").innerHTML = texxt;
+
+let text1 = "Hello";
+let text2 = "World!";
+let text3 = text1.concat(" ",text2);
+document.getElementById("concat").innerHTML = text3;
+
+
+
+
+          
+          </script>
+          
+          </body>
+
+
+    </body>
+</html>
